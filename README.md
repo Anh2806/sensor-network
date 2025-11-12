@@ -29,6 +29,17 @@ Implemented on Arduino library platform
 
 ## TEST
 Website:
-
+-
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94b7b742-9fea-494f-9ba7-121716286993" />
 
+<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/07399774-b9f1-4ab1-afb8-408ff8a390fc" />
+
+<img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/dec4189e-2de1-47de-bd58-1ddc47ba971c" />
+
+<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/52746484-1f2f-424d-bad3-b75f02a70ae2" />
+
+<img width="627" height="393" alt="image" src="https://github.com/user-attachments/assets/f56c4fec-5ea7-46af-855e-329b636b02f8" />
+
+<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/f2bbaed6-64ee-4a9c-b3a2-e2086ddae493" />
+
+<img width="627" height="360" alt="image" src="https://github.com/user-attachments/assets/38ae1641-9ae7-410d-8983-fbf164c6ac8e" />
