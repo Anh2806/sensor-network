@@ -27,19 +27,196 @@ Implemented on Arduino library platform
 - Batteries
 - Miscellaneous components (pipe, funnel, etc.)
 
-## TEST
-Website:
--
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94b7b742-9fea-494f-9ba7-121716286993" />
+Here you go — the full **English README.md**, clean, professional, GitHub-ready, but still modern enough so devs reading it won’t fall asleep.
+(Still based on your project files + images + report structure.)
 
-<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/07399774-b9f1-4ab1-afb8-408ff8a390fc" />
+---
 
-<img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/dec4189e-2de1-47de-bd58-1ddc47ba971c" />
+# 🌱 Garden Monitoring System – IoT • LoRa • Node-RED • Cloudflare Tunnel
 
-<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/52746484-1f2f-424d-bad3-b75f02a70ae2" />
+A long-range, low-cost IoT monitoring system for small-scale gardens and greenhouses.
+The system collects environmental data from remote sensor nodes via LoRa, aggregates it at a central ESP32-S3 Gateway, then publishes it to MQTT and visualizes everything in real-time using Node-RED. Data is simultaneously logged to Google Sheets for long-term analysis.
 
-<img width="627" height="393" alt="image" src="https://github.com/user-attachments/assets/f56c4fec-5ea7-46af-855e-329b636b02f8" />
+> Summary adapted from the original project documentation 
 
-<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/f2bbaed6-64ee-4a9c-b3a2-e2086ddae493" />
+---
 
-<img width="627" height="360" alt="image" src="https://github.com/user-attachments/assets/38ae1641-9ae7-410d-8983-fbf164c6ac8e" />
+## 🚀 Project Overview
+
+This project implements a complete IoT sensing architecture using:
+
+* 📡 **ESP32-S3 LoRa Gateway (SX1278)**
+* 📍 **Node A (ESP8266):** Temperature & humidity (AHT30)
+* 📍 **Node B (ESP8266):** Light + soil moisture via ADS1115 16-bit ADC
+* 💬 **Communication:** LoRa → MQTT → Node-RED
+* 📊 **Dashboard:** Real-time gauges & charts
+* ☁️ **Remote Access:** Cloudflare Tunnel (HTTPS without port forwarding)
+* 📄 **Data Logging:** Google Sheets API
+
+Designed for small farms, home gardens, greenhouses, and IoT research environments.
+
+---
+
+## 🧩 System Architecture
+
+### High-level Architecture
+
+*(corresponds to Figure 3.1 from report)*
+![architecture](./images/architecture.png)
+
+Data flow:
+
+Node A / Node B
+→ **LoRa SX1278**
+→ **ESP32-S3 Gateway**
+→ **MQTT Broker**
+→ **Node-RED Dashboard + Google Sheets**
+
+---
+
+## 🎛 Key Features
+
+### ✔ Multi-sensor environmental monitoring
+
+* Air temperature
+* Air humidity
+* Light intensity
+* Soil moisture (%)
+
+### ✔ Real-time visualization (Node-RED UI)
+
+Gauges + time-series charts
+![dashboard](./images/dashboard.png)
+
+### ✔ Gateway information panel
+
+RSSI, SNR, uptime, CPU temp, MQTT status
+![gateway-info](./images/gateway-info.png)
+
+### ✔ Data logging to Google Sheets
+
+![sheets](./images/google-sheets.png)
+
+### ✔ Remote device control
+
+(LED, fan, pump) via MQTT dashboard switches.
+
+### ✔ Internet access via Cloudflare Tunnel
+
+Secure HTTPS without router port-forwarding.
+![cloudflare](./images/cloudflare.png)
+
+---
+
+## 🛠 Technologies Used
+
+| Component             | Description                         |
+| --------------------- | ----------------------------------- |
+| **ESP32-S3 Gateway**  | LoRa receiver + MQTT publisher      |
+| **ESP8266 Nodes**     | Sensor acquisition nodes            |
+| **SX1278 LoRa**       | Long-range sub-GHz communication    |
+| **AHT30**             | Air temperature & humidity sensor   |
+| **ADS1115**           | 16-bit ADC for soil & light sensors |
+| **Node-RED**          | Visualization & data pipeline       |
+| **Mosquitto MQTT**    | Lightweight IoT messaging           |
+| **Google Sheets API** | Cloud logging                       |
+| **Cloudflare Tunnel** | Public & secure access              |
+
+---
+
+## 📡 LoRa Configuration
+
+* Frequency: **433 / 868 / 915 MHz** (region-dependent)
+* Bandwidth (BW): **125 kHz**
+* Spreading Factor (SF): **7**
+* Coding Rate (CR): **4/5**
+* RF Power: **17 dBm**
+
+Tested range: **300–500 m** in suburban conditions.
+
+---
+
+## 📂 Repository Structure
+
+```
+/NODE_A.ino         # Node A firmware (AHT30 sensor)
+/NODE_B.ino         # Node B firmware (ADS1115 + light/soil)
+/GATEWAY_new.ino    # ESP32-S3 Gateway firmware
+/DO_AM.ino          # Sensor processing module
+/report/            # Original documentation (PDF/DOCX)
+/images/            # Screenshots & diagrams
+README.md           # Project description
+```
+
+---
+
+## 📊 Node-RED Dashboard
+
+Flows include:
+
+### **Flow 1 – Sensor data → Gauges/Charts**
+
+![nodered1](./images/nodered-flow1.png)
+
+### **Flow 2 – Gateway monitoring**
+
+RSSI, SNR, network type, IP, MQTT status
+
+### **Flow 3 – Data pipeline**
+
+Join → Format → Google Sheets Append
+
+---
+
+## 📈 Experimental Results
+
+* **LoRa RSSI:** −38 to −41 dBm (very strong)
+* **SNR:** +9 to +10 dB (clean link)
+* **End-to-end latency:** < 3–5 seconds
+* **Google Sheets:** Continuous logging
+* **Dashboard performance:** Smooth & stable
+
+---
+
+## 🧠 Analysis & Limitations
+
+### Strengths
+
+* Low-cost hardware with reliable long-range LoRa communication
+* ADS1115 significantly improves measurement resolution
+* Clean data pipeline → MQTT → Node-RED → Sheets
+* Simple, intuitive dashboard
+* Cloud access without port-forwarding
+
+### Limitations
+
+* Resistive soil-moisture sensor drifts over time
+* LDR light sensor has low accuracy compared to BH1750
+* MQTT currently without TLS
+* Timestamp duplication (gateway assigns same second for multiple batches)
+* No long-term field test yet
+
+---
+
+## 🔮 Future Improvements
+
+* Upgrade soil sensor → capacitive type
+* Implement **TLS/mTLS** for MQTT security
+* Add **deep-sleep + solar power** for long-term outdoor deployment
+* Implement closed-loop irrigation control (auto-pump)
+* Add OTA firmware updates
+* Conduct extended LoRa range & reliability mapping
+* NTP-based timestamp sync for higher accuracy
+
+---
+
+## 👥 Team Members
+
+* Nguyễn Trương Tuấn Anh
+* Vũ Huy Hoàng
+* Tống Anh Kiệt
+
+Supervisor: **Dr. Bùi Văn Trí**
+
+---
+
