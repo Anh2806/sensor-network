@@ -66,7 +66,7 @@ Node A / Node B
 
 Gauges + time-series charts
 
-
+<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/026f5cc3-6183-4023-8633-f47f5c803091" />
 
 ### ✔ Gateway information panel
 
@@ -86,7 +86,7 @@ RSSI, SNR, uptime, CPU temp, MQTT status
 
 Secure HTTPS without router port-forwarding.
 
-<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/026f5cc3-6183-4023-8633-f47f5c803091" />
+
 
 
 ---
@@ -139,15 +139,20 @@ Flows include:
 
 ### **Flow 1 – Sensor data → Gauges/Charts**
 
-![nodered1](./images/nodered-flow1.png)
+<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/c18b45ec-874e-4e65-8741-859f90db79da" />
+
 
 ### **Flow 2 – Gateway monitoring**
 
 RSSI, SNR, network type, IP, MQTT status
+<img width="627" height="393" alt="image" src="https://github.com/user-attachments/assets/13758ade-d31d-4e4a-9453-c93e8bff6ca6" />
+
 
 ### **Flow 3 – Data pipeline**
 
 Join → Format → Google Sheets Append
+<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/606b2229-7c5b-4016-a4ab-37f3d810bd74" />
+
 
 ---
 
