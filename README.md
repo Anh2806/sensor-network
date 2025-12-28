@@ -65,12 +65,14 @@ Node A / Node B
 ### ✔ Real-time visualization (Node-RED UI)
 
 Gauges + time-series charts
+
 <img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/7f14f166-657f-4935-8e50-d2dad6794f8c" />
 
 
 ### ✔ Gateway information panel
 
 RSSI, SNR, uptime, CPU temp, MQTT status
+
 <img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/9178acc4-4d05-4506-800f-2cf375887e6b" />
 
 
