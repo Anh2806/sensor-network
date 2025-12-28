@@ -145,12 +145,14 @@ Flows include:
 ### **Flow 2 – Gateway monitoring**
 
 RSSI, SNR, network type, IP, MQTT status
+
 <img width="627" height="393" alt="image" src="https://github.com/user-attachments/assets/13758ade-d31d-4e4a-9453-c93e8bff6ca6" />
 
 
 ### **Flow 3 – Data pipeline**
 
 Join → Format → Google Sheets Append
+
 <img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/606b2229-7c5b-4016-a4ab-37f3d810bd74" />
 
 
