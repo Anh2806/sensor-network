@@ -66,7 +66,6 @@ Node A / Node B
 
 Gauges + time-series charts
 
-<img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/7f14f166-657f-4935-8e50-d2dad6794f8c" />
 
 
 ### ✔ Gateway information panel
@@ -78,16 +77,17 @@ RSSI, SNR, uptime, CPU temp, MQTT status
 
 ### ✔ Data logging to Google Sheets
 
-![sheets](./images/google-sheets.png)
+<img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/7f14f166-657f-4935-8e50-d2dad6794f8c" />
 
-### ✔ Remote device control
 
-(LED, fan, pump) via MQTT dashboard switches.
+
 
 ### ✔ Internet access via Cloudflare Tunnel
 
 Secure HTTPS without router port-forwarding.
-![cloudflare](./images/cloudflare.png)
+
+<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/026f5cc3-6183-4023-8633-f47f5c803091" />
+
 
 ---
 
