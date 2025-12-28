@@ -39,7 +39,7 @@ Designed for small farms, home gardens, greenhouses, and IoT research environmen
 
 ### High-level Architecture
 
-*(corresponds to Figure 3.1 from report)*
+
 <img width="470" height="623" alt="image" src="https://github.com/user-attachments/assets/593e2e75-be35-4114-8eef-b09aea9403b4" />
 
 
@@ -65,13 +65,13 @@ Node A / Node B
 ### ✔ Real-time visualization (Node-RED UI)
 
 Gauges + time-series charts
-![Uploading image.png…]()
+<img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/7f14f166-657f-4935-8e50-d2dad6794f8c" />
+
 
 ### ✔ Gateway information panel
 
 RSSI, SNR, uptime, CPU temp, MQTT status
-![Uploading image.png…]()
-
+<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/9178acc4-4d05-4506-800f-2cf375887e6b" />
 
 
 ### ✔ Data logging to Google Sheets
