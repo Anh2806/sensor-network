@@ -20,6 +20,7 @@ The system collects environmental data from remote sensor nodes via LoRa, aggreg
 
 ## 🚀 Project Overview
 
+
 This project implements a complete IoT sensing architecture using:
 
 * 📡 **ESP32-S3 LoRa Gateway (SX1278)**
@@ -39,7 +40,8 @@ Designed for small farms, home gardens, greenhouses, and IoT research environmen
 ### High-level Architecture
 
 *(corresponds to Figure 3.1 from report)*
-![architecture](./images/architecture.png)
+<img width="470" height="623" alt="image" src="https://github.com/user-attachments/assets/593e2e75-be35-4114-8eef-b09aea9403b4" />
+
 
 Data flow:
 
@@ -63,12 +65,14 @@ Node A / Node B
 ### ✔ Real-time visualization (Node-RED UI)
 
 Gauges + time-series charts
-![dashboard](./images/dashboard.png)
+![Uploading image.png…]()
 
 ### ✔ Gateway information panel
 
 RSSI, SNR, uptime, CPU temp, MQTT status
-![gateway-info](./images/gateway-info.png)
+![Uploading image.png…]()
+
+
 
 ### ✔ Data logging to Google Sheets
 
