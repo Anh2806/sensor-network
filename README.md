@@ -4,8 +4,6 @@ In Nowadays’s busy life, garden maintenance has become a difficult task. Plant
 monitored and taken care of by providing adequate watering, fertilizers, etc. Also, for efficient growth, the plants need optimum conditions such as adequate light, proper temperature and moisture content in the soil as wellas air. However, a lot of people are unable to take care of their gardens due to busy and hectic schedules.Also, some of these parameters are difficult to without devices. All these factors result in detriment to the plant health and damage to the overall garden. IoT can provide a solution for this problem. With the help of network infrastructure, IoT enables remote sensing and controlling of objects.Thus, an IoT based smart gardening system can provide a convenient and easy means for plant monitoring and garden
 maintenance
 
-Here you go — the full **English README.md**, clean, professional, GitHub-ready, but still modern enough so devs reading it won’t fall asleep.
-(Still based on your project files + images + report structure.)
 
 ---
 
