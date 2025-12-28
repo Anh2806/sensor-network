@@ -196,20 +196,7 @@ Join → Format → Google Sheets Append
 Supervisor: **Dr. Bùi Văn Trí**
 
 ---
-Run:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca642d49-a5c3-4855-9c91-f9f73dae5db1" />
 
-<img width="627" height="352" alt="image" src="https://github.com/user-attachments/assets/f3bbbc56-6f2c-49fe-bfbe-daf3492cc688" />
-
-<img width="479" height="426" alt="image" src="https://github.com/user-attachments/assets/bff8f1e1-1db6-426c-810c-aaa5891a62bf" />
-
-<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/c3d64f9b-5ed5-49fc-9aa1-d911ed841e4a" />
-
-<img width="627" height="393" alt="image" src="https://github.com/user-attachments/assets/021b3a7c-f9a6-4f38-b5c9-4b55c5b204b2" />
-
-<img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/e28c4d9b-c853-46d5-b810-703464302a2b" />
-
-<img width="627" height="360" alt="image" src="https://github.com/user-attachments/assets/8f49f982-b21e-4f40-b59e-a1b668e576de" />
 
 
 
