@@ -203,6 +203,7 @@ Join → Format → Google Sheets Append
 * Nguyễn Trương Tuấn Anh
 * Vũ Huy Hoàng
 * Tống Anh Kiệt
+* Trương Quang Hải
 
 Supervisor: **Dr. Bùi Văn Trí**
 
